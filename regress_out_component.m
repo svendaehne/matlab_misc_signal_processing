@@ -33,10 +33,6 @@ if not(size(s,1) == T)
     error('X and s must have the same number of samples! size(X,1) = %d, size(s,1) = %d', size(X,1),size(s,1));
 end
 
-% % normalize component time course
-% s = s - repmat(mean(s),[T,1]);
-% s = s ./ repmat(std(s),[T,1]);
-
 % regression filter and patterns for the components
 Cx = X'*X;
 Cs = s'*s;
