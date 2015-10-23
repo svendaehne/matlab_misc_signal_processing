@@ -25,8 +25,6 @@ function [y_shuffled, shuffle_idx] = match_ranks(x,y)
 % as x, i.e.
 %   y_shuffled = [0.11    0.63    0.51    0.56]
 
-
-
 % 2015, sven.daehne@tu-berlin.de
 
 [~, sort_idx] = sort(x);
